@@ -8,7 +8,7 @@ This is a RESTful API for managing products, built with Node.js, Express.js, and
 1. Clone the repository:
    ```
    git clone https://github.com/Kevin222004/Arthalfa-API.git
-   cd simple-product-management-api
+   cd Arthalfa-API
    ```
 
 2. Install dependencies:
