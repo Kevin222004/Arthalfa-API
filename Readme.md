@@ -5,6 +5,8 @@ This is a RESTful API for managing products, built with Node.js, Express.js, and
 
 ## Installation
 
+### Option 1: Running Locally (Without Docker)
+
 1. Clone the repository:
    ```
    git clone https://github.com/yourusername/simple-product-management-api.git
@@ -42,6 +44,43 @@ npm start
 ```
 
 The server will start on the port specified in your `.env`
+
+Option 2: Running with Docker 
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/simple-product-management-api.git
+   cd simple-product-management-api
+   ```
+
+2. Create a `.env` file in the root directory and add your configuration:
+   ```
+   DB_NAME=arthalfa_db
+   DB_USER=arthalfa
+   DB_PASSWORD=arthalfa
+   DB_HOST=db
+   ```
+Note: Set DB_HOST to db since this refers to the PostgreSQL service within the Docker network.
+
+3. Build and start the Docker containers: 
+   ```
+    docker-compose up --build
+    ``` 
+This will start two services:
+
+db: A PostgreSQL database.
+app: The Node.js application.
+
+4. To stop the Docker containers:
+
+```
+docker-compose down
+
+```
+
+The PostgreSQL data will persist across restarts due to the Docker volume configuration.
+
+5. Access the API: The API will be accessible at http://localhost:3000 by default.
 
 ## API Endpoints
 
