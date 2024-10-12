@@ -7,7 +7,7 @@ This is a RESTful API for managing products, built with Node.js, Express.js, and
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/simple-product-management-api.git
+   git clone https://github.com/Kevin222004/Arthalfa-API.git
    cd simple-product-management-api
    ```
 
